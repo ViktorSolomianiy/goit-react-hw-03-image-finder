@@ -15,7 +15,7 @@ export class App extends Component {
     currentPage: 1,
     status: 'idle',
     showModal: false,
-    error: null,
+    error: '',
     largeImageURL: '',
     tags: '',
   };
@@ -90,11 +90,9 @@ export class App extends Component {
 
         {showModal && (
           <Modal
-            images={images}
             onClose={this.toggleModal}
             largeImageURL={largeImageURL}
             tags={tags}
-            openModal={this.openModal}
           />
         )}
 

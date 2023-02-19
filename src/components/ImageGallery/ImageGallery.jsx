@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './ImageGallery.css';
 
+import PropTypes from 'prop-types';
 // import { ToastContainer, toast } from 'react-toastify';
 // import 'react-toastify/dist/ReactToastify.css';
 
@@ -43,7 +44,6 @@ export class ImageGallery extends Component {
           </ul>
 
           <Button onClick={onLoadMore} />
-          {/* {isLoading ? Loader() : <Button onClick={onLoadMore} />} */}
         </>
       );
     } else {
@@ -52,3 +52,11 @@ export class ImageGallery extends Component {
     }
   }
 }
+
+ImageGallery.propTypes = {
+  status: PropTypes.string.isRequired,
+  error: PropTypes.string.isRequired,
+  images: PropTypes.array.isRequired,
+  onLoadMore: PropTypes.func.isRequired,
+  openModal: PropTypes.func.isRequired,
+};
