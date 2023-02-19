@@ -1,0 +1,14 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.gallery-title {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,17 @@
+.gallery-item {
+  cursor: pointer;
+
+  transition: transform 250ms;
+}
+
+.gallery-item:hover {
+  transform: scale(1.03);
+}
+
+.gallery-img {
+  border-radius: 4px;
+  width: 400px;
+  height: 260px;
+  background-size: cover;
+  object-fit: cover;
+}
